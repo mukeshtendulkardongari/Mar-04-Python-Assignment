@@ -1,13 +1,26 @@
 # 1. Write a function `greet(name)` that takes a person's name as input and prints a greeting message like `"Hello, <name>! Welcome to Python."`
 
 def greet(name):
-    print(f"Hello, {name}! welcome to python.")
+    return f"Hello, {name}! welcome to python."
 s=input("Enter your name:")
-greet(s)
+print(greet(s))
 
 # output:
 # Enter your name:Manjunadh
 # Hello, Manjunadh! welcome to python.
+
+# 1.2 Write a function `greet(name)` that takes a person's name as input and prints a greeting message like `"Hello, <name>! Welcome to Python."
+
+l_name=list(map(str,input("Enter names in the list:").split()))
+for i in range(len(l_name)):
+    print(greet(l_name[i]))
+
+# output:
+# Enter names in the list:Manju nehru rishi sam
+# Hello, Manju! welcome to python.
+# Hello, nehru! welcome to python.
+# Hello, rishi! welcome to python.
+# Hello, sam! welcome to python.
 
 # 2. Write a function `add_numbers(a, b)` that takes two numbers as parameters and returns their sum.
 
